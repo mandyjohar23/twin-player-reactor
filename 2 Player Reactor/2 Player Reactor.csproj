@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD369703-FA9E-4D8F-821F-CEF963DB49D2}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2_Player_Reactor</RootNamespace>
+    <AssemblyName>2 Player Reactor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>_2_Player_Reactor.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>_2_Player_Reactor.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity, Version=3.8.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorNames.xaml.cs">
+      <DependentUpon>ColorNames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Equations.xaml.cs">
+      <DependentUpon>Equations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Capital.xaml.cs">
+      <DependentUpon>Capital.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Area.xaml.cs">
+      <DependentUpon>Area.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MouseCheese.xaml.cs">
+      <DependentUpon>MouseCheese.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Alphabets.xaml.cs">
+      <DependentUpon>Alphabets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Final.xaml.cs">
+      <DependentUpon>Final.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logos.xaml.cs">
+      <DependentUpon>Logos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SadSmiley.xaml.cs">
+      <DependentUpon>SadSmiley.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="White.xaml.cs">
+      <DependentUpon>White.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Population.xaml.cs">
+      <DependentUpon>Population.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ColorNames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Equations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Capital.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Area.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MouseCheese.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Alphabets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Final.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Logos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SadSmiley.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="White.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Population.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="173.png" />
+    <Content Include="62.png" />
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bgnew.jpg" />
+    <Content Include="blackTexture.jpg" />
+    <Content Include="button.jpg" />
+    <Content Include="button2.jpg" />
+    <Content Include="buttonvertical.jpg" />
+    <Content Include="fback.jpg" />
+    <Content Include="Logos\bolton.png" />
+    <Content Include="Logos\ck.png" />
+    <Content Include="Logos\Jaguar.png" />
+    <Content Include="Logos\lexus.png" />
+    <Content Include="Logos\Michelin.png" />
+    <Content Include="Logos\Piaggio.png" />
+    <Content Include="Logos\ralph.png" />
+    <Content Include="Logos\real.png" />
+    <Content Include="Logos\Timberland.png" />
+    <Content Include="Logos\who.png" />
+    <Content Include="mouseCheese\false1.png" />
+    <Content Include="mouseCheese\false2.png" />
+    <Content Include="mouseCheese\false3.png" />
+    <Content Include="mouseCheese\false4.png" />
+    <Content Include="mouseCheese\false5.png" />
+    <Content Include="mouseCheese\true1.png" />
+    <Content Include="mouseCheese\true2.png" />
+    <Content Include="mouseCheese\true3.png" />
+    <Content Include="mouseCheese\true4.png" />
+    <Content Include="mouseCheese\true5.png" />
+    <Content Include="p1green.jpg" />
+    <Content Include="p1red.jpg" />
+    <Content Include="p2green.jpg" />
+    <Content Include="p2red.jpg" />
+    <Content Include="pageBack.jpg" />
+    <Content Include="review.png" />
+    <Content Include="smile\smile.png" />
+    <Content Include="smile\smile10.png" />
+    <Content Include="smile\smile11.png" />
+    <Content Include="smile\smile12.png" />
+    <Content Include="smile\smile13.png" />
+    <Content Include="smile\smile14.png" />
+    <Content Include="smile\smile15.png" />
+    <Content Include="smile\smile16.png" />
+    <Content Include="smile\smile17.png" />
+    <Content Include="smile\smile18.png" />
+    <Content Include="smile\smile19.png" />
+    <Content Include="smile\smile2.png" />
+    <Content Include="smile\smile20.png" />
+    <Content Include="smile\smile21.png" />
+    <Content Include="smile\smile22.png" />
+    <Content Include="smile\smile23.png" />
+    <Content Include="smile\smile24.png" />
+    <Content Include="smile\smile25.png" />
+    <Content Include="smile\smile26.png" />
+    <Content Include="smile\smile27.png" />
+    <Content Include="smile\smile28.png" />
+    <Content Include="smile\smile29.png" />
+    <Content Include="smile\smile3.png" />
+    <Content Include="smile\smile30.png" />
+    <Content Include="smile\smile31.png" />
+    <Content Include="smile\smile32.png" />
+    <Content Include="smile\smile33.png" />
+    <Content Include="smile\smile34.png" />
+    <Content Include="smile\smile35.png" />
+    <Content Include="smile\smile36.png" />
+    <Content Include="smile\smile37.png" />
+    <Content Include="smile\smile38.png" />
+    <Content Include="smile\smile39.png" />
+    <Content Include="smile\smile4.png" />
+    <Content Include="smile\smile40.png" />
+    <Content Include="smile\smile41.png" />
+    <Content Include="smile\smile42.png" />
+    <Content Include="smile\smile43.png" />
+    <Content Include="smile\smile44.png" />
+    <Content Include="smile\smile45.png" />
+    <Content Include="smile\smile46.png" />
+    <Content Include="smile\smile47.png" />
+    <Content Include="smile\smile48.png" />
+    <Content Include="smile\smile49.png" />
+    <Content Include="smile\smile5.png" />
+    <Content Include="smile\smile6.png" />
+    <Content Include="smile\smile7.png" />
+    <Content Include="smile\smile8.png" />
+    <Content Include="smile\smile9.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="_2_Player_Reactor.Page9"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28"/>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,22,12,0" Grid.RowSpan="2"/>
+        <Image Grid.RowSpan="2" Source="/fback.jpg" Margin="0"/>
+        <TextBlock x:Name="textblock1" HorizontalAlignment="Center" Margin="10,18,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="280" Width="460" TextAlignment="Center" Grid.RowSpan="2">
+        	<Run Text="Player 1 score: "/>
+        	<LineBreak/>
+        	<Run Text="Player 2 score:"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="It's a DRAW!"/>
+        </TextBlock>
+        <Button Content="" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" BorderThickness="0" Height="175" Width="480" FontSize="90" Margin="-2,325,0,0" FontFamily="Andy" Background="{x:Null}">
+            <Button.Foreground>
+                <ImageBrush Stretch="Fill" ImageSource="/blackTexture.jpg"/>
+            </Button.Foreground>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="Click">
+                    <ec:NavigateToPageAction TargetPage="/MainPage.xaml"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </Button>
+        <Button x:Name="review" Content="" HorizontalAlignment="Left" Margin="330,197,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click_1" Height="140" Width="148" BorderThickness="0">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="/review.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textblock2" HorizontalAlignment="Left" Margin="110,221,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24">
+        	<Run Text="Enjoying the app!"/>
+        	<LineBreak/>
+        	<Run Text=" Give a "/>
+        	<Run FontWeight="Bold" FontSize="48" Text="review"/>
+        </TextBlock>
+    	<UI:AdControl ApplicationId="6f119911-0ce3-4642-aa3d-9a4b152da77d" AdUnitId="136669" HorizontalAlignment="Left" Height="80" Margin="-2,665,0,0" Grid.Row="1" VerticalAlignment="Top" Width="480"/>
+    	<UI:AdControl ApplicationId="6f119911-0ce3-4642-aa3d-9a4b152da77d" AdUnitId="136668" HorizontalAlignment="Left" Height="80" Margin="0,567,0,0" Grid.Row="1" VerticalAlignment="Top" Width="480"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>
